@@ -1,0 +1,12 @@
+.card-skeleton {
+    display: flex;
+    width: 950px;
+    height: 130px;
+    padding: 0.5rem;
+  }
+  .card-skeleton .left-col {
+    margin-right: 1rem;
+  }
+  .card-skeleton .right-col {
+    flex: 1;
+  }

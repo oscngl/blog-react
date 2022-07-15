@@ -1,0 +1,8 @@
+export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";
+
+export const SELECT_TOPIC = "SELECT_TOPIC";
+export const DESELECT_TOPIC = "DESELECT_TOPIC";
+
+export const SET_SEARCH_KEYWORDS = "SET_SEARCH_KEYWORDS";
+export const REMOVE_SEARCH_KEYWORDS = "REMOVE_SEARCH_KEYWORDS";
