@@ -57,7 +57,7 @@ export default function TopicList() {
           >
             All
           </button>
-          {/* {topics.map((topic) => (
+          {topics.map((topic) => (
             <button
               key={topic.id}
               className="badge rounded-pill alert-dark m-1"
@@ -66,112 +66,7 @@ export default function TopicList() {
             >
               {topic.name}
             </button>
-          ))} */}
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Technology
-          </button>
-          
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Business
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Science
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            World
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Culture
-          </button>
-          
-
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Economy
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Politics
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Sport
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Fashion
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Travel
-          </button>
-          
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Health
-          </button>
-          
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            History
-          </button>
-          <button
-            className="badge rounded-pill alert-dark m-1"
-            style={{ fontSize: "13px", textDecoration: "none" }}
-          >
-            Games
-          </button>
-
-          {/*
-            
-            Technology
-            World
-            Business
-            Economy
-            News
-            Software
-            Science
-            Art
-            Culture
-            Games
-            Business
-            Fashion
-            Travel
-            Sport
-            Health
-            Politics
-            History
-            
-            */}
+          ))}
         </>
       )}
     </div>

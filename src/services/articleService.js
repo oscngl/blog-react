@@ -11,7 +11,7 @@ export default class articleService {
 
     return axios({
       method: "post",
-      url: "http://localhost:8080/api/v1/articles/save",
+      url: "https://blog-osc.herokuapp.com/api/v1/articles/save",
       headers: {
         Authorization: "Bearer " + accessToken,
       },
@@ -29,7 +29,7 @@ export default class articleService {
 
     return axios({
       method: "post",
-      url: "http://localhost:8080/api/v1/articles/save",
+      url: "https://blog-osc.herokuapp.com/api/v1/articles/save",
       headers: {
         Authorization: "Bearer " + accessToken,
       },
@@ -39,44 +39,44 @@ export default class articleService {
 
   getAll(pageNumber, pageSize) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/getAll?pageNumber=${pageNumber}&pageSize=${pageSize}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/getAll?pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
   }
 
   getAllByUserId(userId, pageNumber, pageSize) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/getAllByUserId?userId=${userId}&pageNumber=${pageNumber}&pageSize=${pageSize}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/getAllByUserId?userId=${userId}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
   }
 
   getAllByUsername(username, pageNumber, pageSize) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/getAllByUsername?username=${username}&pageNumber=${pageNumber}&pageSize=${pageSize}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/getAllByUsername?username=${username}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
   }
 
   getAllByTopicId(topicId, pageNumber, pageSize) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/getAllByTopicId?topicId=${topicId}&pageNumber=${pageNumber}&pageSize=${pageSize}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/getAllByTopicId?topicId=${topicId}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
   }
 
   getAllByKeywords(keywords, pageNumber, pageSize) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/getAllByKeywords?keywords=${keywords}&pageNumber=${pageNumber}&pageSize=${pageSize}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/getAllByKeywords?keywords=${keywords}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
   }
 
   getById(id) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/getById?id=${id}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/getById?id=${id}`
     );
   }
 
   disable(id, accessToken) {
     return axios({
       method: "put",
-      url: `http://localhost:8080/api/v1/articles/setEnabledFalse?id=${id}`,
+      url: `https://blog-osc.herokuapp.com/api/v1/articles/setEnabledFalse?id=${id}`,
       headers: {
         Authorization: "Bearer " + accessToken,
       },
@@ -86,7 +86,7 @@ export default class articleService {
   update(article, accessToken) {
     return axios({
       method: "put",
-      url: "http://localhost:8080/api/v1/articles/update",
+      url: "https://blog-osc.herokuapp.com/api/v1/articles/update",
       headers: {
         Authorization: "Bearer " + accessToken,
         "Content-Type": "application/json",
@@ -96,30 +96,30 @@ export default class articleService {
   }
 
   countAll() {
-    return axios.get("http://localhost:8080/api/v1/articles/countAll");
+    return axios.get("https://blog-osc.herokuapp.com/api/v1/articles/countAll");
   }
 
   countAllByUserId(userId) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/countAllByUserId?userId=${userId}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/countAllByUserId?userId=${userId}`
     );
   }
 
   countAllByTopicId(topicId) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/countAllByTopicId?topicId=${topicId}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/countAllByTopicId?topicId=${topicId}`
     );
   }
 
   countAllByUsername(username) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/countAllByUsername?username=${username}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/countAllByUsername?username=${username}`
     );
   }
 
   countAllByKeywords(keywords) {
     return axios.get(
-      `http://localhost:8080/api/v1/articles/countAllByKeywords?keywords=${keywords}`
+      `https://blog-osc.herokuapp.com/api/v1/articles/countAllByKeywords?keywords=${keywords}`
     );
   }
 }

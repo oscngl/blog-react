@@ -4,14 +4,14 @@ export default class authService {
   login(email, password) {
     return axios({
       method: "get",
-      url: `http://localhost:8080/api/auth/login?email=${email}&password=${password}`,
+      url: `https://blog-osc.herokuapp.com/api/auth/login?email=${email}&password=${password}`,
     });
   }
 
   register(user) {
     return axios({
       method: "post",
-      url: "http://localhost:8080/api/v1/auth/register",
+      url: "https://blog-osc.herokuapp.com/api/v1/auth/register",
       headers: {},
       data: user,
     });
@@ -20,7 +20,7 @@ export default class authService {
   confirmUser(token) {
     return axios({
       method: "get",
-      url: `http://localhost:8080/api/v1/auth/confirmUser?token=${token}`,
+      url: `https://blog-osc.herokuapp.com/api/v1/auth/confirmUser?token=${token}`,
     });
   }
 }
